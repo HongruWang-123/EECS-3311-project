@@ -1,0 +1,4 @@
+start,end,customer,parking,license,granted,pay,paymentStatus
+2021-04-27 07:30:30.0,2021-04-27 09:30:30.0,Li123@my.yorku.ca,0,123456,true,true,true
+2021-04-29 07:00:30.0,2021-04-29 09:00:30.0,Li123@my.yorku.ca,2,123456,true,false,false
+2021-04-30 07:00:30.0,2021-04-30 09:00:30.0,Li123@my.yorku.ca,2,123456,false,false,false
