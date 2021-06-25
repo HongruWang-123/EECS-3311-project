@@ -111,8 +111,8 @@ public class TestForProject {
 	public void test_8() throws Exception { 
 		String email = "Li123@my.yorku.ca";
 		String password = "Liaa";
-		assertTrue(bookingDB.add("2021-04-30 07:00:30","2021-04-30 09:00:30" , customerDB.login(email,password), psDB.getMaintain().getParkingSpaces().get(2)));
-		Booking b = new Booking("2021-04-30 07:00:30","2021-04-30 09:00:30",psDB.getMaintain().getParkingSpaces().get(2) , customerDB.login(email,password), "false","false","false");
+		assertTrue(bookingDB.add("2022-04-30 07:00:30","2022-04-30 09:00:30" , customerDB.login(email,password), psDB.getMaintain().getParkingSpaces().get(2)));
+		Booking b = new Booking("2022-04-30 07:00:30","2022-04-30 09:00:30",psDB.getMaintain().getParkingSpaces().get(2) , customerDB.login(email,password), "false","false","false");
 		assertTrue(b.toString() != null);
 	}   
 
@@ -128,7 +128,7 @@ public class TestForProject {
 	//Test for 4.5	
 	@Test
 	public void test_10() throws Exception { 
-		assertTrue(bookingDB.remove("Wenxuan2Li123@my.yorku.ca2021-04-30 07:00:30.0"));
+		assertTrue(bookingDB.remove("Wenxuan2Li123@my.yorku.ca2022-04-30 07:00:30.0"));
 	} 
 
 	//Test for 4.5	
@@ -172,23 +172,23 @@ public class TestForProject {
 	//Test for 4.8	
 	@Test  
 	public void test_17() throws Exception {
-		assertFalse(bookingDB.granted("Wenxuan2Li123@my.yorku.ca2021-04-29 07:00:30.0")); 
+		assertFalse(bookingDB.granted("Wenxuan2Li123@my.yorku.ca2022-04-29 07:00:30.0")); 
 	}
 	//Test for 4.6	
 	@Test 
 	public void test_18() throws Exception {
-		assertTrue(bookingDB.pay("Wenxuan2Li123@my.yorku.ca2021-04-29 07:00:30.0") != 0); 
+		assertTrue(bookingDB.pay("Wenxuan2Li123@my.yorku.ca2022-04-29 07:00:30.0") == 0); 
 	}
 	//Test for 4.6	
 	@Test 
 	public void test_19() throws Exception {
-		assertTrue(bookingDB.pay("Wenxuan2Li123@my.yorku.ca2021-04-29 07:00:30.0") != 1); 
+		assertTrue(bookingDB.pay("Wenxuan2Li123@my.yorku.ca2022-04-29 07:00:30.0") != 1); 
 	}
 
 	//Test for 4.9	
 	@Test 
 	public void test_20() throws Exception {
-		assertFalse(officerDB.changePaymentStatus("Wenxuan2Li123@my.yorku.ca2021-04-29 07:00:30.0")); 
+		assertFalse(officerDB.changePaymentStatus("Wenxuan2Li123@my.yorku.ca2022-04-29 07:00:30.0")); 
 	}
 
 	//Test for 4.9	
